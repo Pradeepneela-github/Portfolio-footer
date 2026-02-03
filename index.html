@@ -602,12 +602,24 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-	<p>Pravin Mishra Portfolio v1.0 — Deployed on 02 Feb 2026 — By Pradeep Kumar Neelaboyina</p>
+	<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Pradeep Kumar Neelaboyina</p>
       </div>
 
     </div>
   </footer>
+<script>
+  const today = new Date();
 
+  const day = String(today.getDate()).padStart(2, '0');
+
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const month = monthNames[today.getMonth()];
+
+  const year = today.getFullYear();
+
+  document.getElementById("deployDate").textContent = `${day} ${month} ${year}`;
+</script>
 
 
 </body>
