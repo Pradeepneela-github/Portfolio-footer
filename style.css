@@ -1117,7 +1117,7 @@ section {
 }
 
 /* Bottom */
-.footer-bottom {
+/*.footer-bottom {
   border-top: 1px solid #222;
   padding-top: 20px;
   display: flex;
@@ -1128,31 +1128,24 @@ section {
   font-size: 14px;
 }
 
-.footer-bottom span {
+/*.footer-bottom span {
   color: #facc15;
 }
 
 /* Improve footer UI */
-footer {
-  background-color: #f8f9fa;        /* Matches portfolio light sections */
-  padding: 18px 0;                  /* Comfortable vertical spacing */
-  margin-top: 48px;                 /* Breathing room above footer */
-  text-align: center;               /* Centered for clean layout */
-  border-top: 1px solid #dee2e6;    /* Subtle divider line */
+.footer-bottom {
+  padding: 24px 0;                 /* More welcoming vertical spacing */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #555;                     /* Darker gray for better readability */
+  font-size: 14px;
 }
 
-footer p {
-  font-size: 0.95rem;               /* Clean, readable size */
-  color: #212529;                   /* Strong contrast text */
-  margin: 0;
-  padding: 0 12px;
-  line-height: 1.5;
-}
-
-/* Highlight version or date if needed */
-footer span {
-  color: #0d6efd;                   /* Portfolio primary blue */
-  font-weight: 500;
+.footer-bottom span {
+  color: #facc15;                  /* Highlight stays the same */
+  font-weight: 500;                /* Slight emphasis without overpowering */
 }
 
 
