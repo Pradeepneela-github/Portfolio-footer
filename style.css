@@ -1132,6 +1132,24 @@ section {
   color: #facc15;
 }
 
+/* Improve footer UI */
+footer {
+  background-color: #f5f5f5;        /* Light background for contrast */
+  padding: 16px 0;                  /* Vertical spacing */
+  margin-top: 40px;                 /* Space above footer */
+  text-align: center;               /* Center the text */
+  border-top: 1px solid #ddd;       /* Subtle separation line */
+}
+
+footer p {
+  font-size: 0.95rem;               /* Slightly smaller but readable */
+  color: #333;                      /* Dark text for strong contrast */
+  margin: 0;                        /* Remove default spacing */
+  padding: 0 12px;                  /* Horizontal breathing room */
+  line-height: 1.4;                 /* Better readability */
+}
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .footer-grid {
