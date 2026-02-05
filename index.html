@@ -61,8 +61,12 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>
-        “Empowering thousands of students<br>
-        towards success.”
+       <p>
+          <a href="https://discord.pravinmishra.com/" target="_blank" rel="noopener noreferrer"
+            style="color: #ffffff; text-decoration: underline;">
+            Join DMI Cohort 3 on Discord and start your DevOps journey
+          </a>
+        </p>
       </h1>
     </div>
 
@@ -602,11 +606,24 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+	<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Pradeep Kumar Neelaboyina</p>
       </div>
 
     </div>
   </footer>
+<script>
+  const today = new Date();
 
+  const day = String(today.getDate()).padStart(2, '0');
+
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const month = monthNames[today.getMonth()];
+
+  const year = today.getFullYear();
+
+  document.getElementById("deployDate").textContent = `${day} ${month} ${year}`;
+</script>
 
 
 </body>
